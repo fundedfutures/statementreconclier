@@ -1,0 +1,27 @@
+{
+  "buildCommand": "npm run build",
+  "outputDirectory": "dist",
+  "framework": "vite",
+  "functions": {
+    "api/parse-statement.ts": {
+      "maxDuration": 60
+    },
+    "api/sync-sheets.ts": {
+      "maxDuration": 30
+    }
+  },
+  "rewrites": [
+    {
+      "source": "/api/parse-statement",
+      "destination": "/api/parse-statement"
+    },
+    {
+      "source": "/api/sync-sheets",
+      "destination": "/api/sync-sheets"
+    },
+    {
+      "source": "/(.*)",
+      "destination": "/index.html"
+    }
+  ]
+}

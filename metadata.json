@@ -1,0 +1,6 @@
+{
+  "name": "Statement Reconciler",
+  "description": "Helps you reconcile M-Pesa paybill payments embedded inside your bank statement against the projects/clients they belong to, and logs them to a Google Sheet.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
